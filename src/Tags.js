@@ -1,6 +1,8 @@
-import React from "react";
+import {useState} from "react";
 
 export default function Tags({tags}){
+    const [tags, setTags] = useState(["boomdotdev", "task", "tags", "react"]);
+    
     return (
         <div className="tags">
             {tags.map((tag, index) => (
