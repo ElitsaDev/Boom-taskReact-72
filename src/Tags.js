@@ -1,8 +1,8 @@
 export default function Tags({tags}){
     return (
         <div className="tags">
-            {tags.map((tag) => (
-                <div className="tag">#{tag}</div>
+            {tags.map((tag, index) => (
+                <div key={index} className="tag">#{tag}</div>
             ))}
         </div>
     );
